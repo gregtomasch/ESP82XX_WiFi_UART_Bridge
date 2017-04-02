@@ -36,13 +36,13 @@ class WiFiSerial
 {
   public:
                                        WiFiSerial();
-	   static void                       serialCom();
-	   static bool                       SerialTXfree(uint8_t port);
-	   static void                       SerialOpen(uint8_t port, uint32_t baud);
-	   static void                       SerialEnd(uint8_t port);
-	   static uint8_t                    SerialRead(uint8_t port);
-	   static uint8_t                    SerialAvailable(uint8_t port);
-	   static void                       SerialWrite(uint8_t port,uint8_t c);
+	 static void                       serialCom();
+	 static bool                       SerialTXfree(uint8_t port);
+	 static void                       SerialOpen(uint8_t port, uint32_t baud);
+	 static void                       SerialEnd(uint8_t port);
+	 static uint8_t                    SerialRead(uint8_t port);
+	 static uint8_t                    SerialAvailable(uint8_t port);
+	 static void                       SerialWrite(uint8_t port,uint8_t c);
      static void                       SerialSendMWPcmd(uint8_t port, uint8_t err,uint8_t cmd);
      static void                       Push_Data_Update();
   private:
@@ -56,14 +56,14 @@ class WiFiSerial
      static void inline                headSerialError(uint8_t s);
      static void                       evaluateCommand();
      static void                       serializefloat(float a);
-	   static void                       serialize32(uint32_t a);
-	   static void                       serialize16(int16_t a);
-	   static void                       serialize8(uint8_t a);
+	 static void                       serialize32(uint32_t a);
+	 static void                       serialize16(int16_t a);
+	 static void                       serialize8(uint8_t a);
      static void                       serializeNames(PGM_P s);
-	   static unsigned char              T_USB_Available(uint8_t port);
-	   static unsigned char              T_USB_Write(uint8_t port, uint8_t uc_data);
-	   static void                       UartSendData(uint8_t port);
-	   static void                       SerialSerialize(uint8_t port,uint8_t a);
+	 static unsigned char              T_USB_Available(uint8_t port);
+	 static unsigned char              T_USB_Write(uint8_t port, uint8_t uc_data);
+	 static void                       UartSendData(uint8_t port);
+	 static void                       SerialSerialize(uint8_t port,uint8_t a);
      static void                       tailSerialRequest(uint8_t port);
      static void                       tailSerialReply();
 };
