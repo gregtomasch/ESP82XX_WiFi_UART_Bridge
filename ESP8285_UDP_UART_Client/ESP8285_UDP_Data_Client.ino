@@ -1,28 +1,15 @@
-/* BMX055_BME280_BasicAHRS_Butterfly Basic Example Code
- AHRS by: Kris Winer
- WiFi/UART Bridge code b: Greg Tomasch
+/* Basic ESP8285 UDP client Example Code
+
+ by: Greg Tomasch
  date: January 24, 2017
  license: Beerware - Use this code however you'd like. If you 
- find it useful you can buy me us beers some time.
+ find it useful you can buy me a beer some time.
  
- Demonstrate basic BMX-055 functionality including parameterizing the register addresses, initializing the sensor, 
- getting properly scaled accelerometer, gyroscope, and magnetometer data out. Added display functions to 
- allow display to on breadboard monitor. Addition of 9 DoF sensor fusion using open source Madgwick and 
- Mahony filter algorithms. Sketch runs on the 3.3 V 80 MHz Butterfly.
-
- After AHRS data is generated, it is pushed to the UART handler and it is sent by a simple protocl (MultiWii MSP)
- over to the ESP82XX for WiFi broadcast
- 
- SDA and SCL should have 4K7 external pull-up resistors (to 3.3V).
- 
- Hardware setup:
- BMX055 ------ ------- Butterfly
- VDD ---------------------- 3.3V
- SDA ----------------------- 20
- SCL ----------------------- 21
- GND ---------------------- GND
- 
- Note: The BMX055 is an I2C sensor and is not 5V tolerant
+ This code lets the user program an ESP82XX board to act as a receiver
+ client for the ESP82XX UART/WiFi bridge. It configures as a client, connects
+ to the bridges acces point, receives the data the bridge transmits and
+ pushes it to the serial port for the user to see twhat the bridge is sending
+ from the host MCU
  */
 
 
