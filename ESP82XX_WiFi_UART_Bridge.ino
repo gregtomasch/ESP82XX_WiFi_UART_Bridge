@@ -4,7 +4,7 @@
  license: Beerware - Use this code however you'd like. If you 
  find it useful you can buy me a beer some time.
  
- Demonstrate UDP packet transfer from the an non-WiFi MCU using the ESP8285 as  
+ Demonstrate UDP packet transfer from the an non-WiFi MCU using the ESP82XX as  
  WiFi/UART bridge. The Serial protocol is simple (MultiWii MSP). This exapmle was
  written directly for the Pesky Products ESP8285 add-on boards
  made by Kris Winer. This board is the WiFi access point

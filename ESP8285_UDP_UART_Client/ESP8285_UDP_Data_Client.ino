@@ -9,7 +9,8 @@
  client for the ESP82XX UART/WiFi bridge. It configures as a client, connects
  to the bridges acces point, receives the data the bridge transmits and
  pushes it to the serial port for the user to see twhat the bridge is sending
- from the host MCU
+ from the host MCU. This was written for the Pesky Products ESP8285 development board
+ made by Kris Winer
  */
 
 
